@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap');
 
-/*font-family: 'Open Sans', sans-serif;*/
-/*font-family: 'Raleway', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;
+grubości:
+light 300
+regular 400
+bold 700*/
+/*font-family: 'Raleway', sans-serif;
+grubości:
+light 300
+regular 400
+bold 700
+extrabold 800*/
 
 :root {
     --main-color: #08A6E4;
@@ -12,6 +21,119 @@
     --grey-color: #A5A5A5;
     --light-grey-color: #F7F7F7;
     --white-color: #FFFFFF;
+    --font-open-light: 300;
+    --font-open-regular: 300;
+    --font-open-bold: 400;
+    --font-raleway-light: 300;
+    --font-raleway-regular: 400;
+    --font-raleway-bold: 700;
+    --font-raleway-extrabold: 800;
+    --font-family-raleway:'Raleway', sans-serif;
+    --font-family-open: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+
+/* wspólne dla wszystkich sekcji */
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container {
+    width: 1352px;
+}
+
+/* ------------------------------ */
+/* Sekcja nawigacji */
+
+.section1 {
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0 3px 6px var(--main-shadow-color);
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: var(--font-raleway-light);
+    font-size: 32px;
+    margin-top: 16px;
+    margin-bottom: 17px;
+    color: var(--main-color);
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.navbtn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--font-open-bold);
+    font-size: 11px;
+    padding: 0 15px;
+    padding-top: 28px;
+    padding-bottom: 27px;
+    margin: 0 32.5px;
+    color: var(--grey-color);
+
+}
+.navbtn:nth-child(1) {
+    margin-left: 0;
+}
+.navbtn:nth-child(4) {
+    margin-right: 0;
+}
+
+/* ------------------------------ */
+/* Sekcja otwierająca */
+
+.opensection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    margin-top: 130px;
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-raleway-regular);
+    font-size: 49px;
+    margin-bottom: 20px;
+    color: var(--black-color);
+}
+.description {
+    font-family: var(--font-family-open);
+    font-weight: var(--font-open-regular);
+    font-size: 16px;
+    color: var(--black-color);
+    margin-bottom: 38px;
+}
+.btnlink {
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    font-family: var(--font-family-open);
+    font-weight: var(--font-open-bold);
+    font-size: 16px;
+    padding: 22px 157px;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px var(--main-shadow-color);
+}
+.image {
+    height: 594px;
+}
+
+/* ------------------------------ */
+/* Sekcja statystyki */
+
+.statistics .container{
+    display: flex;
+    flex-direction: column;
+}
+
 
