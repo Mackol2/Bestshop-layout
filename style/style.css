@@ -28,7 +28,7 @@ extrabold 800*/
     --font-raleway-regular: 400;
     --font-raleway-bold: 700;
     --font-raleway-extrabold: 800;
-    --font-family-raleway:'Raleway', sans-serif;
+    --font-family-raleway: 'Raleway', sans-serif;
     --font-family-open: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
@@ -38,6 +38,7 @@ extrabold 800*/
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 
@@ -55,11 +56,13 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
 
 }
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: var(--font-raleway-light);
@@ -68,10 +71,12 @@ body {
     margin-bottom: 17px;
     color: var(--main-color);
 }
+
 .navigation {
     display: flex;
     align-items: center;
 }
+
 .navbtn {
     font-family: 'Open Sans', sans-serif;
     font-weight: var(--font-open-bold);
@@ -83,9 +88,11 @@ body {
     color: var(--grey-color);
 
 }
+
 .navbtn:nth-child(1) {
     margin-left: 0;
 }
+
 .navbtn:nth-child(4) {
     margin-right: 0;
 }
@@ -98,6 +105,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .title {
     margin-top: 130px;
     font-family: var(--font-family-raleway);
@@ -106,6 +114,7 @@ body {
     margin-bottom: 20px;
     color: var(--black-color);
 }
+
 .description {
     font-family: var(--font-family-open);
     font-weight: var(--font-open-regular);
@@ -113,6 +122,7 @@ body {
     color: var(--black-color);
     margin-bottom: 38px;
 }
+
 .btnlink {
     text-decoration: none;
     color: var(--white-color);
@@ -124,6 +134,7 @@ body {
     border-radius: 40px;
     box-shadow: 5px 10px 14px var(--main-shadow-color);
 }
+
 .image {
     height: 594px;
 }
@@ -131,9 +142,109 @@ body {
 /* ------------------------------ */
 /* Sekcja statystyki */
 
-.statistics .container{
+.statistics .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+.statTitle {
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-raleway-regular);
+    font-size: 36px;
+    color: var(--black-color);
+    margin-top: 100px;
+}
+
+.boxContainer {
+    margin-top: 103px;
+    display: flex;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 121px;
+}
+
+.box:before {
+    content: "";
+    height: 63px;
+    width: 63px;
+    background-color: var(--red-color);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.box:nth-child(2):before {
+    content: "";
+    height: 63px;
+    width: 63px;
+    background-color: var(--main-color);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.box:nth-child(3):before {
+    content: "";
+    height: 63px;
+    width: 63px;
+    background-color: var(--green-color);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.icons {
+    height: 54px;
+    width: 54px;
+    z-index: 1;
+    align-self: flex-end;
+    margin-right: 12px;
+    margin-top: 3px;
+}
+
+.boxContainer .box:nth-child(2) .icons {
+    height: 58px;
+    width: 58px;
+    z-index: 1;
+    align-self: flex-end;
+    margin-right: 18px;
+}
+
+.boxContainer .box:nth-child(3) .icons {
+    margin-top: 6px;
+}
+
+.boxTitle {
+    margin-top: 15px;
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-raleway-extrabold);
+    font-size: 20px;
+    color: var(--black-color);
+    margin-bottom: 19px;
+    letter-spacing: 5.96px;
+}
+
+.boxInfo {
+    width: 120px;
+    text-align: center;
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-raleway-regular);
+    font-size: 17px;
+    color: var(--grey-color);
+}
+
+.box:nth-child(2) {
+    margin: 0 205px;
+}
+
+/* ------------------------------ */
+/* Sekcja benefity */
+
 
 
