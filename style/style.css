@@ -3,5 +3,15 @@
 /*font-family: 'Open Sans', sans-serif;*/
 /*font-family: 'Raleway', sans-serif;*/
 
-
+:root {
+    --main-color: #08A6E4;
+    --main-shadow-color: rgba(7, 172, 230, .16);
+    --red-color: #FB3B64;
+    --green-color: #55DFB4;
+    --black-color: #000000;
+    --grey-color: #A5A5A5;
+    --light-grey-color: #F7F7F7;
+    --white-color: #FFFFFF;
+    box-sizing: border-box;
+}
 
