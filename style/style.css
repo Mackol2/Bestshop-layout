@@ -759,17 +759,20 @@ body {
     display: flex;
     justify-content: center;
 }
-.footer .container{
+
+.footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
+
 .footer .logo {
     margin-top: 21px;
     font-size: 26px;
     margin-bottom: 6.5px;
 }
+
 .footer .rights {
     color: var(--grey-color);
     font-family: var(--font-family-open);
@@ -777,6 +780,7 @@ body {
     font-size: 11px;
     margin-bottom: 17px;
 }
+
 .footer_links a:first-child {
     margin-right: 20px;
 }
