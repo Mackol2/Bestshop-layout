@@ -86,7 +86,11 @@ body {
     padding-bottom: 27px;
     margin: 0 32.5px;
     color: var(--grey-color);
+    transition: 1s;
+}
 
+.nav_link {
+    text-decoration: none;
 }
 
 .navbtn:nth-child(1) {
@@ -95,6 +99,11 @@ body {
 
 .navbtn:nth-child(4) {
     margin-right: 0;
+}
+
+.navbtn:hover {
+    content: "";
+    border-bottom: 4px solid var(--main-color);
 }
 
 /* ------------------------------ */
@@ -246,5 +255,288 @@ body {
 /* ------------------------------ */
 /* Sekcja benefity */
 
+.benefits {
+    width: 100%;
+    background-color: var(--light-grey-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.container2 {
+    width: 1124px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 105px;
+}
 
+.benefitsBox {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    position: relative;
+}
+
+.benefitsBox:first-child {
+    margin-top: 106px;
+    margin-bottom: 37px;
+}
+
+.benefitsImage {
+    height: 219px;
+    width: 386px;
+    background-image: url("../images/Macbook.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 38px;
+    right: 118px;
+    z-index: 1;
+}
+
+.benefitsBox:before {
+    content: "";
+    height: 180px;
+    width: 180px;
+    background-color: var(--red-color);
+    border-radius: 41px;
+    rotate: 45deg;
+    position: absolute;
+    right: 110px;
+    top: 70px;
+    z-index: 0.5;
+
+}
+
+.benefitsInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-right: 673px;
+    position: relative;
+}
+
+.benefitsTitle {
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-raleway-regular);
+    font-size: 36px;
+    color: var(--black-color);
+    margin-top: 91px;
+    margin-bottom: 30px;
+}
+
+.benefitsDescription {
+    font-family: var(--font-family-open);
+    font-weight: var(--font-open-regular);
+    line-height: 22px;
+    font-size: 16px;
+    color: var(--black-color);
+    margin-bottom: 141px;
+}
+
+.benefitsInfo:after {
+    content: "";
+    border: 2px solid var(--red-color);
+    position: absolute;
+    bottom: 91px;
+    left: 0;
+    right: 88.6px;
+}
+
+.benefitsBox_2 {
+    margin-bottom: 38px;
+}
+
+.benefitsImage_2 {
+    height: 328px;
+    width: 426px;
+    background-image: url("../images/iPhone.png");
+    top: 29px;
+    left: 70px;
+}
+
+.benefitsBox_2:before {
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    background-color: #07ACE6;
+    top: 12px;
+    left: 70px;
+}
+
+.benefitsInfo_2 {
+    margin-right: 20px;
+    margin-left: 688px;
+}
+
+.benefitsTitle_2 {
+    padding-right: 190px;
+}
+
+.benefitsDescription_2 {
+    margin-bottom: 121px;
+}
+
+.benefitsInfo_2:after {
+    border: 2px solid var(--main-color);
+    right: 106px;
+    bottom: 71px;
+}
+
+.benefitsBox_3 {
+    background-color: var(--light-grey-color);
+    display: flex;
+}
+
+.benefitsImage_3 {
+    width: 78%;
+    background-color: var(--main-color);
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    position: relative;
+}
+
+.benefitsImage_3 img {
+    height: 207px;
+    width: 297px;
+    position: absolute;
+    top: 98px;
+    left: 62px;
+}
+
+.benefitsBox_3:before {
+
+}
+
+.benefitsInfo_3 {
+    background-color: var(--white-color);
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: auto;
+    margin-right: 61px;
+
+}
+
+.benefitsTitle_3 {
+    margin-right: 240px;
+}
+
+.benefitsDescription_3 {
+    padding-bottom: 0;
+    margin-bottom: 115px;
+}
+
+.benefitsInfo_3:after {
+    left: 35px;
+    right: 259px;
+    bottom: 71px;
+    border: 2px solid var(--green-color);
+}
+
+/* ------------------------------ */
+/* Sekcja cennik*/
+
+.prices .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.price_box_container {
+    width: 1266px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secton_header {
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-raleway-regular);
+    font-size: 36px;
+    color: var(--black-color);
+    margin-top: 100px;
+    margin-bottom: 71px;
+}
+
+.price_box {
+    border: 1px solid var(--red-color);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 372px;
+    margin-bottom: 197px;
+    position: relative;
+}
+
+.price_box_title {
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-raleway-bold);
+    font-size: 20px;
+    margin-top: 34px;
+    margin-bottom: 14px;
+}
+
+.price {
+    font-family: var(--font-family-open);
+    font-weight: var(--font-open-light);
+    font-size: 46px;
+    color: var(--red-color);
+    margin-bottom: 69px;
+}
+
+.list {
+    font-family: var(--font-family-open);
+    font-weight: var(--font-open-regular);
+    font-size: 14px;
+    text-align: center;
+    line-height: 41px;
+}
+
+.list:last-child {
+    margin-bottom: 71px;
+}
+
+.buy_link {
+    font-family: var(--font-family-open);
+    font-weight: var(--font-open-bold);
+    font-size: 13px;
+    color: var(--white-color);
+    background-color: var(--red-color);
+    padding: 16px 57px;
+    border-radius: 23px;
+    position: absolute;
+    bottom: -22px;
+    text-decoration: none;
+}
+
+.price_box:nth-child(2) .price {
+    color: var(--main-color);
+}
+
+.price_box:nth-child(2) {
+    border: 1px solid var(--main-color);
+    box-shadow: 5px 10px 27px var(--main-shadow-color);
+    scale: 1.1;
+}
+
+.price_box:nth-child(2) .buy_link {
+    background-color: var(--main-color);
+}
+
+.price_box:nth-child(3) .price {
+    color: var(--green-color);
+}
+
+.price_box:nth-child(3) {
+    border: 1px solid var(--green-color);
+}
+
+.price_box:nth-child(3) .buy_link {
+    background-color: var(--green-color);
+}
+
+/* ------------------------------ */
+/* Sekcja kontakt*/
