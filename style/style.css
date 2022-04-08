@@ -597,13 +597,16 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .data {
     margin-right: 114px;
 }
+
 .data .title {
     margin-top: 0;
     margin-bottom: 22px;
 }
+
 .incentive {
     font-family: var(--font-family-open);
     font-weight: var(--font-open-regular);
@@ -611,6 +614,7 @@ body {
     font-size: 16px;
     color: var(--black-color);
 }
+
 .contact_data {
     display: flex;
     justify-content: space-around;
@@ -622,6 +626,7 @@ body {
     color: var(--grey-color);
     position: relative;
 }
+
 .email::before {
     content: "";
     height: 27px;
@@ -632,6 +637,7 @@ body {
     top: -2px;
     display: block;
 }
+
 .phone::before {
     content: "";
     height: 27px;
@@ -642,21 +648,25 @@ body {
     top: -2px;
     display: block;
 }
+
 .contact {
     display: flex;
     justify-content: center;
 }
+
 .form {
     width: 49%;
     display: flex;
     flex-direction: column;
     position: relative;
 }
+
 .area input {
     width: 100%;
     height: 38px;
     margin-bottom: 20px;
 }
+
 .form::before {
     content: "NAME";
     font-family: var(--font-family-open);
@@ -666,6 +676,7 @@ body {
     color: var(--main-color);
     position: absolute;
 }
+
 .form::after {
     content: "EMAIL";
     font-family: var(--font-family-open);
@@ -676,13 +687,16 @@ body {
     position: absolute;
     top: 63px;
 }
+
 .name {
     border: none;
     border-bottom: 1px solid var(--grey-color);
 }
+
 .name:nth-child(2) {
     margin-top: 42px;
 }
+
 .checkbox input {
     position: absolute;
     opacity: 0;
@@ -720,8 +734,6 @@ body {
     background-position: center;
 }
 
-
-
 .form button {
     padding: 20px 97px;
     border: none;
@@ -735,4 +747,36 @@ body {
     box-shadow: 5px 10px 14px var(--main-shadow-color);
     margin-bottom: 59px;
 
+}
+
+/* ------------------------------ */
+/* Sekcja Stopka*/
+
+.footer {
+    width: 100%;
+    background-color: var(--light-grey-color);
+    box-shadow: 0 -5px 40px var(--grey-color);
+    display: flex;
+    justify-content: center;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer .logo {
+    margin-top: 21px;
+    font-size: 26px;
+    margin-bottom: 6.5px;
+}
+.footer .rights {
+    color: var(--grey-color);
+    font-family: var(--font-family-open);
+    font-weight: var(--font-open-regular);
+    font-size: 11px;
+    margin-bottom: 17px;
+}
+.footer_links a:first-child {
+    margin-right: 20px;
 }
